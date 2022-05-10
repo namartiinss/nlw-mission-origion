@@ -2,6 +2,7 @@
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root{
@@ -22,12 +23,18 @@ body {
 }
 
 .wrapper{
-    width: 37.5rem;
+    width: 1;
     margin-inline: auto;
     padding-left: 2.4rem;
 }
 
 /*========== Header ============================*/
+header img{
+    width: 26.4rem;
+    display: block;
+    margin-inline: auto;
+    object-position: 0 2rem;
+}
 
 header::before{
     content: "";
@@ -87,13 +94,6 @@ header button{
     margin-left: auto;
 }
 
-header img{
-    width: 26.4rem;
-    display: block;
-    margin-inline: auto;
-    object-position: 0 2rem;
-}
-
 header .stats{
     width: 32.7rem;
     padding-block: 4rem;
@@ -141,4 +141,12 @@ nav .wrapper{
 nav.scroll{
     background-color: var(--primary-color);
     width: 100vw;
+}
+
+nav.scroll svg:nth-child(1) path{
+    fill: white;
+}
+
+nav.scroll svg:nth-child(2) path{
+    stroke: white;
 }
